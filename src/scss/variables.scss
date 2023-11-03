@@ -1,0 +1,20 @@
+
+//colors
+$primary: #136EF6;
+$dark: #121212;
+$white: #FFFFFF;
+//font
+$font: 'Onest', sans-serif;
+//weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+//mixins
+@mixin text($weight, $size, $height, $color) {
+    font-family: $font;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
