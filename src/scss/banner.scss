@@ -1,0 +1,12 @@
+.banner {
+    &__title {
+        @include text($bold, 16px, 20.804px, $dark);
+        margin-bottom: 5px;
+        span {
+            color: $primary;
+        }
+    }
+    &__text {
+        @include text($medium, 13px, 16.903px, $dark);
+    }
+}
