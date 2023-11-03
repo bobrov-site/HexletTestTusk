@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap');
 @import "bootstrap/scss/bootstrap";
 
-h1 {
-    font-family: 'Onest', sans-serif;
-    font-weight: 500;
-    color: red;
-}
+@import 'banner',
+'variables.scss';
