@@ -1,0 +1,29 @@
+.modal {
+    &-dialog {
+        width: 100%;
+        max-width: 960px;
+    }
+    &-body {
+        position: relative;
+        .btn-close {
+            position: absolute;
+            right: 0;
+        }
+    }
+    &-title {
+        @include text($bold, 34px, 44.2px, $primary);
+        margin-bottom: 15px;
+    }
+    &-description {
+        @include text($medium, 18px, 23.404px, $dark);
+        margin-bottom: 15px;
+    }
+    &-list {
+        &-item {
+            @include text($regular, 15px, 19.503px, $dark);
+            span {
+                font-weight: $medium;
+            }
+        }
+    }
+}
