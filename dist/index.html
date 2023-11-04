@@ -6,16 +6,72 @@
     <title>Document</title>
   <script defer src="main.bundle.js"></script></head>
   <body>
-    <header>
+    <header class="banner">
       <div class="container">
-        <div class="row">
-          <div class="col-4-lg">
-            <img src="schoolBag.svg">
+        <div class="row align-items-center">
+          <div class="col-lg-4 position-relative">
+            <img class="banner__icon-schoolBag" src="schoolBag.svg" alt="schoolbag">
+            <img class="banner__icon-arrowsBanner" src="arrows-banner.svg" alt="arrows-banner">
+            <h3 class="banner__title">
+              Мы знаем, как закончить <br> школу за <span>10 месяцев!</span>
+            </h3>
+            <p class="banner__text">А потом устроиться на любимую работу</p>
           </div>
-          <div class="col-4-lg"></div>
-          <div class="col-4-lg"></div>
+          <div class="col-lg-5">
+            <img class="banner__icon-arrowsBanner2" src="arrows-banner-2.svg" alt="arrows-banner-2">
+            <p class="banner__text">
+              Хотите также? приходите учиться в Хекслет!
+            </p>
+            <h3 class="banner__title">
+              <span>До 1 сентября</span> оставьте заявку на любую профессию, <br> а
+              мы подарим классные <span>бонусы</span> для воодушевляющего старта
+            </h3>
+          </div>
+          <div class="col-lg-3">
+            <button
+              type="button"
+              class="banner__btn btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              А что подарите?
+            </button>
+          </div>
         </div>
       </div>
     </header>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
