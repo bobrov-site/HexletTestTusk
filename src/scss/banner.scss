@@ -1,4 +1,9 @@
 .banner {
+    background: linear-gradient(0deg, rgba(166, 126, 255, 0.10) 0%, rgba(166, 126, 255, 0.10) 100%), url('../img/bg-banner.png'), lightgray 0px -513.027px / 100% 1200% no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 16px;
+    padding-bottom: 16px;
     &__title {
         @include text($bold, 16px, 20.804px, $dark);
         margin-bottom: 5px;
@@ -8,5 +13,29 @@
     }
     &__text {
         @include text($medium, 13px, 16.903px, $dark);
+    }
+    &__btn {
+        padding-left: 22px;
+        padding-right: 22px;
+        @include text($bold, 14px, 130%, #FCFCFC);
+    }
+    &__icon {
+        &-schoolBag {
+            left: -50px;
+            position: absolute;
+        }
+        &-arrowsBanner {
+            position: absolute;
+            right: 50px;
+        }
+        &-arrowsBanner2 {
+            position: absolute;
+            right: -10px;
+            top: 50%;
+        }
+        &-computer {
+            position: absolute;
+            right: 50px;
+        }
     }
 }
