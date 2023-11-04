@@ -20,6 +20,7 @@ module.exports = {
         assetModuleFilename: '[name][ext]'
     },
     devServer: {
+        liveReload: true,
         static: './dist',
     },
     module: {
