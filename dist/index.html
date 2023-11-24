@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Тестовое задание для хекслета</title>
   <script defer src="main.bundle.js"></script></head>
   <body>
     <header class="banner">
@@ -17,7 +17,7 @@
             </h3>
             <p class="banner__text">А потом устроиться на любимую работу</p>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 position-relative">
             <img class="banner__icon-arrowsBanner2" src="arrows-banner-2.svg" alt="arrows-banner-2">
             <p class="banner__text">
               Хотите также? приходите учиться в Хекслет!
@@ -27,7 +27,8 @@
               мы подарим классные <span>бонусы</span> для воодушевляющего старта
             </h3>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 position-relative">
+            <img class="banner__icon-computer" src="computer.svg" alt="computer">
             <button
               type="button"
               class="banner__btn btn btn-primary"
@@ -48,27 +49,40 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <div class="modal-body">
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-wrapper d-flex">
+              <div class="modal-col d-flex flex-column">
+                <h2 class="modal-title">Хочу стать разработчиком!</h2>
+                <p class="modal-description">И получить один из трех подарков</p>
+                <ul class="modal-list">
+                  <li class="modal-list-item">
+                    <img class="modal-list-item-icon" src="revenue.svg" alt="revenue">
+                    <p><span>Именной депозит на 20к.</span>Будет доступен после покупки професии, им можно оплачивать дальнейшее обучение в Хекслете</p>
+                  </li>
+                  <li class="modal-list-item">
+                    <img class="modal-list-item-icon" src="revenue.svg" alt="revenue">
+                    <p><span>Консультация с карьерным экспертом в IT.</span>Прояснит вопросы будущего трудоустройства: от поиска первой работы до развития карьеры</p>
+                  </li>
+                  <li class="modal-list-item">
+                    <img class="modal-list-item-icon" src="revenue.svg" alt="revenue">
+                    <p><span>Возможность заморозить обучение на 2 месяца.</span>Перерыв, если нужно будет восстановить силы и не учиться</p>
+                  </li>
+                </ul>
+                <p class="modal-footer-text">
+                  *Подарок определит сотрудник Хекслета после беседы. Мы уточним ваши намерения, поможем с выбором, а если поймем, что программирование – 
+                  это не ваше, честно отговорим от обучения
+                </p>
+              </div>
+              <div class="modal-col"></div>
+            </div>
           </div>
         </div>
       </div>
