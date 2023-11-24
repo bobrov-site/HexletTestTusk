@@ -4,10 +4,15 @@
         max-width: 960px;
     }
     &-body {
+        background: linear-gradient(0deg, rgba(166, 126, 255, 0.10) 0%, rgba(166, 126, 255, 0.10) 100%), url('../img/bg-banner.png'), lightgray 0px -513.027px / 100% 1200% no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 45px 55px;
         position: relative;
         .btn-close {
             position: absolute;
-            right: 0;
+            right: 14px;
+            top: 14px
         }
     }
     &-title {
@@ -19,11 +24,46 @@
         margin-bottom: 15px;
     }
     &-list {
+        position: relative;
         &-item {
+            list-style-type: none;
             @include text($regular, 15px, 19.503px, $dark);
+            margin-bottom: 10px;
+            &-icon {
+                left: -18px;
+                position: absolute;
+            }
             span {
                 font-weight: $medium;
             }
+        }
+        &-item:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .form {
+        .form-control {
+            padding-top: 17px;
+            padding-bottom: 17px;
+            @include text($regular, 14px, 18.2px, #4A4A53)
+        }
+        .form-label {
+            @include text($regular, 13px, 16.9px, #9E9E9E)
+        }
+        .form-select {
+            padding-top: 17px;
+            padding-bottom: 17px;
+            @include text($regular, 13px, 16.9px, #9E9E9E)
+            
+        }
+    }
+    &-footer-text {
+        @include text($regular, 12px, 130%, $dark);
+    }
+    &-footer-text-form {
+        @include text($regular, 10px, 13.002px, #4A4A53);
+        a {
+            color: #4a4a53;
         }
     }
 }
