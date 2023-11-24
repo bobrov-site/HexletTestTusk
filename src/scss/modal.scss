@@ -75,6 +75,12 @@
         }
     }
 
+    .form-img {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+
     &-footer-text {
         @include text($regular, 12px, 130%, $dark);
     }
